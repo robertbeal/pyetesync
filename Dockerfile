@@ -1,5 +1,4 @@
 FROM alpine:3.8
-LABEL maintainer="rob@kohi.uk"
 
 WORKDIR /app
 COPY . /app

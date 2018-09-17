@@ -6,3 +6,6 @@ Session.vim
 __pycache__
 *.egg-info
 .*.swp
+
+__pycache__
+.pytest_cache

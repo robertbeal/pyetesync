@@ -39,7 +39,26 @@ While this is stable enough for usage, it still may be subject to change, so
 please watch out for the changelog when updating version.
 Docs are currently missing but are planned.
 
-## Running the example script
+## Docker
+
+The docker image exists on DockerHub under `robertbeal/pyetesync` but you can build the image yourself:
+
+`docker build -t pyetesync .`
+
+To run an instance:
+
+```
+docker run \
+    --user $(id -u) \
+    -it robertbeal/pyetesync \
+    me@email.com \
+    "$(cat /root/etesync-password)" \
+    "$(cat /root/etesync-passphrase)" \
+    https://api.etesync.com \
+    | jq . > "$(date +%Y-%m-%d).json"
+```
+
+## Running example the example script
 
 You'll need virtualenv to get the dependencies.
 
@@ -89,10 +108,9 @@ You'd need to run your local server: https://github.com/etesync/server-skeleton/
 
 And then add two users:
 
-  - test@localhost
-  - test2@localhost
+- test@localhost
+- test2@localhost
 
 Password for both: SomePassword
 
 That's it.
-
