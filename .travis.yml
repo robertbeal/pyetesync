@@ -1,0 +1,27 @@
+services: docker
+language: python
+python:
+  - "3.6"
+
+env:
+  matrix:
+    - ARCH=i386
+    - ARCH=amd64
+    - ARCH=arm
+    - ARCH=aarch64
+
+before_script:
+  - ./build.sh $ARCH
+  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
+
+script:
+  - pipenv run pytest -v
+  - docker build -t robertbeal/pyetesync:$ARCH --file Dockerfile.$ARCH .
+
+deploy:
+  provider: script
+  script:
+    echo "$DOCKER_PWD" | docker login -u "$DOCKER_USER" --password-stdin &&
+    docker push robertbeal/syncthing:$ARCH
+  on:
+    branch: master

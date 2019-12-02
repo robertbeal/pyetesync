@@ -1,4 +1,5 @@
 FROM alpine:3.10.3
+LABEL maintainer="github.com/robertbeal"
 
 WORKDIR /app
 COPY . /app
