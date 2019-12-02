@@ -22,7 +22,7 @@ deploy:
   provider: script
   script:
     echo "$DOCKER_PWD" | docker login -u "$DOCKER_USER" --password-stdin &&
-    docker push robertbeal/syncthing:$ARCH
+    docker push robertbeal/pyetesync:$ARCH
   on:
     branch: master
   
