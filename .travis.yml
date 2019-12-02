@@ -25,3 +25,4 @@ deploy:
     docker push robertbeal/syncthing:$ARCH
   on:
     branch: master
+  
