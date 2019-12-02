@@ -15,7 +15,6 @@ before_script:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
 
 script:
-  - pipenv run pytest -v
   - docker build -t robertbeal/pyetesync:$ARCH --file Dockerfile.$ARCH .
 
 deploy:
