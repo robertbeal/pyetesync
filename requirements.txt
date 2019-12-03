@@ -10,7 +10,7 @@ cryptography==2.7
 furl==2.1.0
 idna==2.5
 more-itertools==4.3.0
-orderedmultidict==1.0
+orderedmultidict==1.0.1
 packaging==17.1
 peewee==3.7.0
 pluggy==0.7.1
