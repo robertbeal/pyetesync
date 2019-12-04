@@ -10,6 +10,7 @@ RUN apk add --no-cache --virtual=build-dependencies \
     libressl-dev \
     python3-dev \
   && apk --no-cache add \
+    libressl \
     python3 \
     py-tz \
   && python3 -m pip install --upgrade pip \
