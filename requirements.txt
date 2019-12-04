@@ -9,7 +9,7 @@ coverage==4.5.4
 cryptography==2.3
 furl==2.1.0
 idna==2.8
-more-itertools==4.3.0
+more-itertools==8.0.0
 orderedmultidict==1.0.1
 packaging==17.1
 peewee==3.12.0
