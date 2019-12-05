@@ -1,5 +1,5 @@
 appdirs==1.4.3
-asn1crypto==0.22.0
+asn1crypto==1.2.0
 atomicwrites==1.1.5
 attrs==19.3.0
 certifi==2019.11.28
