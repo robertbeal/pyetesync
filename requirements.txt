@@ -14,7 +14,7 @@ orderedmultidict==1.0.1
 packaging==19.2
 peewee==3.13.1
 pluggy==0.13.1
-py==1.8.0
+py==1.8.1
 pyasn1==0.4.8
 pycparser==2.19
 pyparsing==2.4.6
