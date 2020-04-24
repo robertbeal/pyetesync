@@ -12,7 +12,7 @@ idna==2.9
 more-itertools==8.2.0
 orderedmultidict==1.0.1
 packaging==20.3
-peewee==3.13.2
+peewee==3.13.3
 pluggy==0.13.1
 py==1.8.1
 pyasn1==0.4.8
