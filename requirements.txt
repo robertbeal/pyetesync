@@ -17,7 +17,7 @@ pluggy==0.13.1
 py==1.8.1
 pyasn1==0.4.8
 pycparser==2.20
-pyparsing==2.4.6
+pyparsing==2.4.7
 pyscrypt==1.6.2
 pytest==5.4.2
 pytest-cov==2.8.1
