@@ -19,7 +19,7 @@ pyasn1==0.4.8
 pycparser==2.20
 pyparsing==2.4.7
 pyscrypt==1.6.2
-pytest==5.4.2
+pytest==5.4.3
 pytest-cov==2.9.0
 python-dateutil==2.8.1
 requests==2.23.0
