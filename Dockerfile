@@ -1,4 +1,4 @@
-FROM alpine:3.10.3
+FROM alpine:3.13.1
 LABEL maintainer="github.com/robertbeal"
 
 WORKDIR /app
